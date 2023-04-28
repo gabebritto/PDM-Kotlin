@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <LinearLayout
+        android:id="@+id/llColor"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textAlignment="center"
+            android:id="@+id/colorName"
+            android:layout_width="180dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llRed"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:textAlignment="textEnd"
+            android:id="@+id/tvRed"
+            android:text="255"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sbRed"
+            android:min="0"
+            android:max="255"
+            android:progress="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llGreen"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:id="@+id/tvGreen"
+                android:text="255"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sbGreen"
+            android:min="0"
+            android:max="255"
+            android:progress="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llBlue"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:id="@+id/tvBlue"
+                android:text="255"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sbBlue"
+            android:min="0"
+            android:max="255"
+            android:progress="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnFormSalvar"
+            android:text="Salvar"
+            android:backgroundTint="#00AA00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnFormCancelar"
+            android:text="Cancelar"
+            android:backgroundTint="#AA0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
